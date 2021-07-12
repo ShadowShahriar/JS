@@ -1,0 +1,53 @@
+/* This code (CSS/JS) was written exactly 1 year ago (13 07 2020) by a novice, and it was me. Now I put the code here for historical purposes. */
+
+/* relevant portion */
+#container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	cursor: none;
+}
+
+.particle{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(0, 0) scale(0) rotate(0);
+	animation: trail linear 0.7s var(--i) forwards;
+	opacity: 0.85;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
+}
+	
+@keyframes trail{
+	10%{
+		transform: translate(0, 0) scale(1) rotate(0);
+	}
+	100%{
+		transform: translate(var(--shiftX), var(--shiftY)) scale(0) rotate(360deg);
+	}
+}
+
+/* to make things look pretty */
+html, body{
+	position: relative;
+	inset: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+html{
+	display: block;
+}
+
+body{
+	display: grid;
+	place-items: center;
+	background-color: #000;
+}
+
+/* Made with Coffee, Care, and Curiosity by @ShadowShahriar */
