@@ -115,6 +115,8 @@ label:hover{
 	bottom: 0;
 	transform: translate(0%, 100%);
 	width: max(6.4em, 20vmin);
+	min-width: 6.4em;
+	max-width: 20vmin;
 	pointer-events: none;
 	opacity: 0.8;
 	overflow: visible;
