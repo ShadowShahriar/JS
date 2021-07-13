@@ -209,4 +209,9 @@ body.glow .particles{
 	filter: contrast(1.5);
 }
 
+::selection{
+	color: #fff;
+	background-color: var(--accent-alpha);
+}
+
 /* Made with Coffee, Care, and Curiosity by @ShadowShahriar */
