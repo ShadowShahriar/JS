@@ -28,7 +28,7 @@ No?
 // == split + join
 function wraplines(txt, cls, tag = 'div'){
 	return tagstart = `<${tag}${cls ? ` class='${cls}'` : ''}>`, tagend = `</${tag}>`, 
-	`${tagstart}${txt.split('\n').join(`${tagstart}${tagend}`)}${tagend}`
+	`${tagstart}${txt.split('\n').join(`->${tagend}${tagstart}`)}${tagend}`
 }
 
 // == test
